@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <style>      
+            .google{
+            font-family: Arial, sans-serif; 
+            font-weight: 550; 
+            font-size: 20px; 
+            padding: 20px;
+            }
+
+            #search {
+            display: contents;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            padding-left: 1000px;
+            }
+
+            form {
+            font-family: Arial, sans-serif;
+            }
+
+            .condition_bars {
+            border-radius: 1px;
+            height: 29px;
+            width: 537px;
+            font-size: 18px;
+            border: 1px solid #dfe1e5;
+            background: #fff;
+            }
+
+            .search_botton {
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            color: #3c4043;
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+            margin: 5px 4px;
+            padding: 0 16px;
+            cursor: pointer;
+            min-width: 54px;
+            height: 36px;
+            }
+
+            #images_text {
+            color: #4487f6;
+            font-size: 14px;
+            font-family: arial, sans-serif;
+            position: absolute;
+            left: 1095px;
+            bottom: 552px;
+            }
+
+            .advanced_search{
+                color:#f28b82; 
+                font-size: 20px; 
+                margin: 25px 35px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="google">
+            <span style="color: blue">G</span><span style="color: red">o</span><span style="color:yellow">o</span><span style="color: blue">g</span><span style="color: green">l</span><span style="color: red">e</span>
+            
+            <span id="search">
+            <a href="index.html"  style="position: absolute; top:5px; right: 10px">Home</a>
+            <a href="image_search.html"  style="position: absolute; top:5px; right: 60px">Images</a>
+            </span>
+        </div>
+
+        <div class="advanced_search">
+            Adanced Search
+        </div>
+
+        <hr style="border-top: 1px solid grey;">
+
+        <p>
+            <span style="padding-right: 630px; font-size: 20px;">Find pages with...</span>
+            <span style="color: grey; font-weight: bold;">To do this in the search box.</span>
+        </p>           
+
+        <form action="https://www.google.com/search">
+            <div>
+                <span style="padding-right: 126px;">all these words:</span>
+                    <input type="text" name="as_q" class="condition_bars">
+                    <span style="color: grey">Type the important words:</span> 
+                    <span style="color: grey; font-weight: bold;">"tri-colour rat terrier"</span></p>      
+            </div>
+
+            <div>
+                <span style="padding-right: 50px;">this exact word or phrase:</span>
+                <input type="text" name="as_epq" class="condition_bars">
+                <span style="color: grey">Put exact words in quotes:</span>
+                <span style="color: grey; font-weight: bold;">"rat terrier"</span></p>      
+            </div>
+
+            <div>
+                <span style="padding-right: 96px;">any of these words:</span>
+                    <input type="text" name="as_oq" class="condition_bars">
+                    <span style="color: grey">Type OR between all the words you want:</span> 
+                    <span style="color: grey; font-weight: bold;">miniature OR standard</span></p>      
+            </div>
+
+            <div>
+                <span style="padding-right: 96px;">non of these words:</span>
+                <input type="text" name="as_eq" class="condition_bars">
+                <span style="color: grey">Put a minus sign just before words that you don't want:</span> 
+                <span style="color: grey; font-weight: bold;">-rodent, -"Jack Russell"</span></p>      
+            </div>
+            <input class="search_botton" type="submit" value="Advance Search">
+        </form>
+    </body>
+</html>
